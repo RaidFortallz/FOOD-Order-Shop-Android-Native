@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintHorizontal_bias=".5"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="13dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/padlock1"
+        android:drawablePadding="13dp"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemail"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Login"
+        android:drawableEnd="@drawable/enter"
+        android:paddingRight="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword"
+        app:layout_constraintVertical_bias=".4"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/lupaPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
